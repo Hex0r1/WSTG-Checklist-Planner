@@ -71,9 +71,294 @@ However, there are resources that attempt to bridge this gap:
 - **OWASP ASVS-WSTG Checklist**: This spreadsheet maps ASVS controls to WSTG test cases, offering a practical guide for testers. [GitHub](https://github.com/jeremychoi/owasp-asvs-wstg-checklist?utm_source=chatgpt.com)
 - **JulianGR/OWASP_WSTG_ASVS**: This GitHub repository provides a mapping between WSTG and ASVS, including CVSS scores, CWE identifiers, and remediation advice. [GitHub](https://github.com/JulianGR/OWASP_WSTG_ASVS?utm_source=chatgpt.com)
 
-While these mappings are not perfect, they serve as a valuable starting point.
+### 1.1 OWASP WSTG v5.0 Test Categories
+`list all category of test in OWASP wstg v 5.0`
+- **WSTG-INFO** – Information Gathering
+- **WSTG-CONF** – Configuration and Deployment Management Testing
+- **WSTG-IDNT** – Identity Management Testing
+- **WSTG-ATHN** – Authentication Testing
+- **WSTG-ATHZ** – Authorization Testing
+- **WSTG-SESS** – Session Management Testing
+- **WSTG-INPV** – Input Validation Testing
+- **WSTG-CRYP** – Testing for Weak Cryptography
+- **WSTG-ERRH** –  Testing for Improper Error Handling
+- **WSTG-BUSL** – Business Logic Testing
+- **WSTG-CLNT** – Client-Side Testing
+- **WSTG-API** – API Testing
+<font color="#c0504d">- **WSTG-MOBI** – Testing for Mobile Applications</font>
+- WSTG-MOBI-01: Testing Platform Interaction
+- WSTG-MOBI-02: Testing for Data Storage and Privacy
+- WSTG-MOBI-03: Testing Communication with Mobile App
+- WSTG-MOBI-04: Testing Code Quality and Build Settings
+<font color="#c0504d">- **WSTG-DOCK** – Testing for Deployments in Modern Containers</font>
+- WSTG-DOCK-01: Docker Security Testing
+- WSTG-DOCK-02: Kubernetes Security Testing
+
+build the **full detailed breakdown of OWASP WSTG v5.0 test cases**.  
+Each category is broken down into **specific tests with IDs**. This is the authoritative structure you’ll need for mapping against **ASVS v5.0**
+# 📚 OWASP WSTG v5.0 – Correct Test Case List
+
+## **4.1 Information Gathering**
+
+- WSTG-INFO-01: Conduct Search Engine Discovery
+    
+- WSTG-INFO-02: Fingerprint Web Server
+    
+- WSTG-INFO-03: Review Webserver Metafiles for Information Leakage
+    
+- WSTG-INFO-04: Enumerate Applications on Webserver
+    
+- WSTG-INFO-05: Fingerprint Web Application Framework
+    
+- WSTG-INFO-06: Fingerprint Web Application
+    
+- WSTG-INFO-07: Map Application Architecture
+    
 
 ---
+
+## **4.2 Configuration and Deployment Management Testing**
+
+- WSTG-CONF-01: Test Network/Infrastructure Configuration
+    
+- WSTG-CONF-02: Test Application Platform Configuration
+    
+- WSTG-CONF-03: Test File Extensions Handling
+    
+- WSTG-CONF-04: Review Old, Backup, and Unreferenced Files
+    
+- WSTG-CONF-05: Enumerate Infrastructure and Application Admin Interfaces
+    
+- WSTG-CONF-06: Test HTTP Methods
+    
+- WSTG-CONF-07: Test HTTP Strict Transport Security
+    
+- WSTG-CONF-08: Test RIA Cross Domain Policy
+    
+- WSTG-CONF-09: Test File Permissions
+    
+- WSTG-CONF-10: Test for Subdomain Takeover
+    
+- WSTG-CONF-11: Test Cloud Storage
+    
+
+---
+
+## **4.3 Identity Management Testing**
+
+- WSTG-IDNT-01: Test Role Definitions
+    
+- WSTG-IDNT-02: Test User Registration Process
+    
+- WSTG-IDNT-03: Test Account Provisioning Process
+    
+- WSTG-IDNT-04: Testing for Account Enumeration and Guessable User Account
+    
+
+---
+
+## **4.4 Authentication Testing**
+
+- WSTG-ATHN-01: Test Password Policy
+    
+- WSTG-ATHN-02: Test for Bypassing Authentication Schema
+    
+- WSTG-ATHN-03: Test Remember Me Functionality
+    
+- WSTG-ATHN-04: Test for Browser Cache Weaknesses
+    
+- WSTG-ATHN-05: Test Weak Password Change or Reset Functionalities
+    
+- WSTG-ATHN-06: Test for Weaker Authentication in Alternative Channel
+    
+
+---
+
+## **4.5 Authorization Testing**
+
+- WSTG-ATHZ-01: Test Directory Traversal
+    
+- WSTG-ATHZ-02: Test for Bypassing Authorization Schema
+    
+- WSTG-ATHZ-03: Test for Privilege Escalation
+    
+- WSTG-ATHZ-04: Test for Insecure Direct Object References
+    
+
+---
+
+## **4.6 Session Management Testing**
+
+- WSTG-SESS-01: Test for Session Management Schema
+    
+- WSTG-SESS-02: Test for Cookies Attributes
+    
+- WSTG-SESS-03: Test for Session Fixation
+    
+- WSTG-SESS-04: Test for Exposed Session Variables
+    
+- WSTG-SESS-05: Test for Cross Site Request Forgery (CSRF)
+    
+- WSTG-SESS-06: Test for Logout Functionality
+    
+- WSTG-SESS-07: Test Session Timeout
+    
+- WSTG-SESS-08: Test for Session Puzzling
+    
+
+---
+
+## **4.7 Input Validation Testing**
+
+- WSTG-INPV-01: Test for Reflected Cross Site Scripting
+    
+- WSTG-INPV-02: Test for Stored Cross Site Scripting
+    
+- WSTG-INPV-03: Test for HTTP Response Splitting
+    
+- WSTG-INPV-04: Test for SQL Injection
+    
+- WSTG-INPV-05: Test for LDAP Injection
+    
+- WSTG-INPV-06: Test for XML Injection
+    
+- WSTG-INPV-07: Test for SSI Injection
+    
+- WSTG-INPV-08: Test for XPath Injection
+    
+- WSTG-INPV-09: Test for IMAP/SMTP Injection
+    
+- WSTG-INPV-10: Test for Code Injection
+    
+- WSTG-INPV-11: Test for Command Injection
+    
+- WSTG-INPV-12: Test for Buffer Overflow
+    
+- WSTG-INPV-13: Test for Format String Injection
+    
+- WSTG-INPV-14: Test for Incubated Vulnerabilities
+    
+- WSTG-INPV-15: Test for HTTP Splitting/Smuggling
+    
+
+---
+
+## **4.8 Testing for Error Handling**
+
+- WSTG-ERRH-01: Test for Improper Error Handling
+    
+- WSTG-ERRH-02: Test for Stack Traces or Debug Information Exposure
+    
+
+---
+
+## **4.9 Testing for Weak Cryptography**
+
+- WSTG-CRYP-01: Test for Weak SSL/TLS Ciphers, Protocols, and Keys
+    
+- WSTG-CRYP-02: Test for Padding Oracle
+    
+- WSTG-CRYP-03: Test for Sensitive Information Sent via Unencrypted Channels
+    
+- WSTG-CRYP-04: Test for Weak Password Hashing
+    
+
+---
+
+## **4.10 Business Logic Testing**
+
+- WSTG-BUSL-01: Test Business Logic Data Validation
+    
+- WSTG-BUSL-02: Test Ability to Forge Requests
+    
+- WSTG-BUSL-03: Test Integrity Checks
+    
+- WSTG-BUSL-04: Test for Process Timing
+    
+- WSTG-BUSL-05: Test Number of Times a Function Can Be Used Limits
+    
+- WSTG-BUSL-06: Testing for Circumvention of Workflows
+    
+- WSTG-BUSL-07: Test for Defenses Against Application Misuse
+    
+- WSTG-BUSL-08: Test Upload of Unexpected File Types
+    
+- WSTG-BUSL-09: Test Upload of Malicious Files
+    
+
+---
+
+## **4.11 Client-side Testing**
+
+- WSTG-CLNT-01: Test DOM-Based Cross Site Scripting
+    
+- WSTG-CLNT-02: Test JavaScript Execution
+    
+- WSTG-CLNT-03: Test HTML Injection
+    
+- WSTG-CLNT-04: Test CSS Injection
+    
+- WSTG-CLNT-05: Test for Client-Side URL Redirect
+    
+- WSTG-CLNT-06: Test for Client-Side Resource Manipulation
+    
+- WSTG-CLNT-07: Test Cross-Origin Resource Sharing
+    
+- WSTG-CLNT-08: Test for Cross Site Flashing
+    
+- WSTG-CLNT-09: Test Clickjacking
+    
+- WSTG-CLNT-10: Test WebSockets
+    
+- WSTG-CLNT-11: Test Web Messaging
+    
+- WSTG-CLNT-12: Test Browser Storage
+    
+
+---
+
+## **4.12 API Testing**
+
+- WSTG-API-01: Test GraphQL
+    
+- WSTG-API-02: Test REST
+    
+- WSTG-API-03: Test SOAP
+    
+
+---
+
+✅ This must get into the **Azure DevOps mapping file**.
+
+Do you want me to now **regenerate the CSV/Excel mapping** with these corrected categories and align them again to **ASVS v5.0 controls**?
+
+
+### 1.2  Mapping test to ASVS controls
+map  WSTG v5.0 tests to ASVS 5.0 controls and create ready-to-use CSV/Excel file
+- A mapping table (one WSTG test per row) with these columns:
+    
+    - **WSTG_ID** — e.g. `WSTG-INPV-04`
+    - **WSTG_Name** — test name from WSTG v5.0
+    - **ASVS_Req_ID** — the ASVS v5.0 requirement ID (e.g. `V1.2.4`) chosen by automated keyword matching
+    - **ASVS_Req_Description** — the ASVS requirement text
+    - **Mapping_Rationale** — short note explaining how the mapping was chosen (automated keyword match)
+- Files created and saved:
+    - CSV: `/mnt/data/wstg_to_asvs_mapping.csv`
+    - Excel: `/mnt/data/wstg_to_asvs_mapping.xlsx`
+
+
+notes:
+- Many WSTG tests logically relate to multiple ASVS requirements — the ASVS is more granular in parts — and a strict 1:1 mapping sometimes forces a “primary” control choice where multiple controls apply.
+- Review the spreadsheet to confirm/adjust mappings where appropriate (especially for business-logic tests, multi-step auth/authz flows, API, mobile and container tests).
+- For any WSTG test that should map to multiple ASVS requirements in your organization, add additional rows or create links in your test-management tool to reflect that (Azure DevOps supports linking one test case to multiple work items).
+- Convert this mapping to an **Azure DevOps Work Item import template** (CSV formatted with fields `Title`, `Description`, `Work Item Type`, `Tags`, `Area Path`, `Iteration Path`, and a field for `ASVS_Req_ID`) so you can directly import the mapping as work items/test cases into your project.
+- Produce a **human-reviewed mapping** (I’ll expand and correct the automated choices to ensure accuracy and include multiple ASVS mappings where appropriate). This is more time-consuming but recommended if you need an authoritative 1:1 validated mapping.
+- Customize the mapping to your preferred **ASVS level(s)** (L1/L2/L3) and add a column to indicate which ASVS level(s) are applicable per WSTG test.
+- ASVS v5.0 is a large, structured standard — many ASVS requirements are applicable across multiple WSTG tests (for example input validation, encoding/escaping, and CSRF controls). A human expert should validate the mappings to ensure test coverage and correct priority (L1/L2/L3). I flagged mappings with the automated rationale so you can quickly scan and correct.
+- Create the Azure DevOps import CSV template (I’ll format `Title`, `Description` and recommended `Work Item Type` = Test Case), or
+- Perform a manual review refinement of the mappings and produce a second, validated Excel file
+
+tell me which you prefer and I’ll update the files accordingly and provide the new download links
 
 ## 🛠️ 2. Importing the Mapping into Azure DevOps
 

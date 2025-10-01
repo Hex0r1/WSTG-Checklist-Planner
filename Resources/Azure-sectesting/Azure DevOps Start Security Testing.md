@@ -1,4 +1,4 @@
-our goal is achive an **structured security testing framework inside Azure DevOps Test Plans**, tightly aligned with **OWASP ASVS (Application Security Verification Standard)** and **OWASP WSTG (Web Security Testing Guide)**.
+our goal is achieve an **structured security testing framework inside Azure DevOps Test Plans**, tightly aligned with **OWASP ASVS (Application Security Verification Standard)** and **OWASP WSTG (Web Security Testing Guide)**.
 
 This will let :
 
